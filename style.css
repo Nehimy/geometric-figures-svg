@@ -1,0 +1,37 @@
+/*
+   El valor border-box en el box-sizing hace que el padding y el border pasen a formar parte
+   del cálculo del ancho de la caja.
+ */
+
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.first-container {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(3, auto);
+}
+
+.container-circle {
+    display: grid;
+}
+
+#color-circle {
+    fill: #f7c2a8;
+    /* stroke:blue; */
+}
+
+.container-rect {
+    display: grid;
+}
+
+#color-rect {
+    fill:#f463d0;
+}
+
+#color-square {
+    fill:#ffc335;
+}

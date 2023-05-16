@@ -4,9 +4,52 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <link rel="icon" type="image/svg" href="http://ney.lh/css/Notitas_icono.svg">
-  <title>List</title>
+  <link rel="icon" type="image/svg" href="http://ney.lh/css/nohay.svg">
+  <title>Figuras geometricas svg</title>
 </head>
 <body>
+  <!--
+       Nota
+
+       viewBox: El atributo viewBox define la posición y la dimensión, en
+       el espacio del usuario, de una ventana gráfica SVG.
+
+       El valor del atributo viewBox es una lista de cuatro
+       números: min-x, min-y, ancho y alto. Los números min-x y min-y representan
+       las coordenadas superiores izquierdas de la ventana gráfica. Los números
+       ancho y alto representan sus dimensiones.
+
+       version: El atributo de versión se utiliza para indicar a qué especificación
+       se ajusta un documento SVG. Solo está permitido en el elemento raíz <svg>. Es
+       puramente consultivo y no tiene influencia en la prestación o el procesamiento.
+
+       Si bien se especifica para aceptar cualquier número, las únicas dos opciones
+       válidas actualmente son 1.0 y 1.1.
+  -->
+  <div class="first-container">
+      <div class="container-circle">
+        <svg viewBox=" 0 0 100 100" version="1.1">
+          <circle id="color-circle" cx="50" cy="50" r="15" fill="yellow"/>
+        </svg>
+      </div>
+
+      <div class="container-rect">
+        <svg viewBox="0 0 100 100" version="1.1">
+          <rect id="color-rect" width="25" height="50" y="25" x="35" fill="#008d46" />
+        </svg>
+      </div>
+
+      <svg id="color-square" width="auto" height="auto"
+           viewBox="0 0 120 120"
+           xmlns="http://www.w3.org/2000/svg">
+        <rect x="50" y="50"
+              width="50" height="50"
+              rx="15" ry="15"/>
+      </svg>
+  </div>
+
+
+
+
 </body>
 </html>
