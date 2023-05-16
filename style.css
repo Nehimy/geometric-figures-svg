@@ -1,7 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
 /*
    El valor border-box en el box-sizing hace que el padding y el border pasen a formar parte
    del cálculo del ancho de la caja.
  */
+
+html {
+  font-size: 100%; /* 100% = 16px */
+}
 
 *{
   margin: 0px;
@@ -15,17 +20,10 @@
     grid-template-rows: repeat(3, auto);
 }
 
-.container-circle {
-    display: grid;
-}
 
 #color-circle {
     fill: #f7c2a8;
     /* stroke:blue; */
-}
-
-.container-rect {
-    display: grid;
 }
 
 #color-rect {
@@ -34,4 +32,22 @@
 
 #color-square {
     fill:#ffc335;
+}
+
+#color-line {
+    stroke: #7ace84;
+}
+
+#color-text {
+    fill: #178eff;
+    font-family: 'Secular One', sans-serif;
+    font-size: 0.5em;
+}
+
+#color-triangle {
+    fill: #734dfe;
+}
+
+#color-star {
+    fill:#1de5db;
 }
