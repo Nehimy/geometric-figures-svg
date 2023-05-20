@@ -1,42 +1,41 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" type="image/svg" href="http://ney.lh/css/nohay.svg">
-  <title>Figuras geometricas svg</title>
-</head>
-<body>
-  <!--
-       Nota
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/svg" href="http://ney.lh/css/nohay.svg">
+    <title>Figuras geometricas svg</title>
+  </head>
+  <body>
+    <!--
+         Nota
 
-       viewBox: El atributo viewBox define la posición y la dimensión, en
-       el espacio del usuario, de una ventana gráfica SVG.
+         viewBox: El atributo viewBox define la posición y la dimensión, en
+         el espacio del usuario, de una ventana gráfica SVG.
 
-       El valor del atributo viewBox es una lista de cuatro
-       números: min-x, min-y, ancho y alto. Los números min-x y min-y representan
-       las coordenadas superiores izquierdas de la ventana gráfica. Los números
-       ancho y alto representan sus dimensiones.
+         El valor del atributo viewBox es una lista de cuatro
+         números: min-x, min-y, ancho y alto. Los números min-x y min-y representan
+         las coordenadas superiores izquierdas de la ventana gráfica. Los números
+         ancho y alto representan sus dimensiones.
 
-       version: El atributo de versión se utiliza para indicar a qué especificación
-       se ajusta un documento SVG. Solo está permitido en el elemento raíz <svg>. Es
-       puramente consultivo y no tiene influencia en la prestación o el procesamiento.
+         version: El atributo de versión se utiliza para indicar a qué especificación
+         se ajusta un documento SVG. Solo está permitido en el elemento raíz <svg>. Es
+         puramente consultivo y no tiene influencia en la prestación o el procesamiento.
 
-       Si bien se especifica para aceptar cualquier número, las únicas dos opciones
-       válidas actualmente son 1.0 y 1.1.
-  -->
-  <div class="first-container">
-        <svg viewBox=" 0 0 100 100" version="1.1">
-          <circle id="color-circle" cx="50" cy="50" r="15" fill="yellow" />
-        </svg>
-
-
-        <svg viewBox="0 0 100 100" version="1.1">
-          <rect id="color-rect" width="25" height="50" y="25" x="35" fill="#008d46" />
-        </svg>
-
-
+         Si bien se especifica para aceptar cualquier número, las únicas dos opciones
+         válidas actualmente son 1.0 y 1.1.
+    -->
+    <div class="first-container">
+      <!-- Circle -->
+      <svg viewBox=" 0 0 100 100" version="1.1">
+        <circle id="color-circle" cx="50" cy="50" r="15" fill="yellow" />
+      </svg>
+      <!-- Rect -->
+      <svg viewBox="0 0 100 100" version="1.1">
+        <rect id="color-rect" width="25" height="50" y="25" x="35" fill="#008d46" />
+      </svg>
+      <!-- Square -->
       <svg id="color-square" width="auto" height="auto"
            viewBox="0 0 100 100"
            xmlns="http://www.w3.org/2000/svg">
@@ -44,24 +43,50 @@
               width="50" height="50"
               rx="15" ry="15" />
       </svg>
-
-      <svg viewBox="0 0 100 100" >
+      <!-- Line -->
+      <svg viewBox="0 0 100 100">
         <line id="color-line" x1="10" y1="80" x2="80" y2="25"
               stroke-width="2" stroke="black" />
       </svg>
-
+      <!-- Text -->
       <svg  viewBox="0 0 100 100">
         <text id="color-text" x="15" y="45" font-size="7" fill="red">Linux forever and ever </text>
       </svg>
       <!-- Trangle -->
-      <svg id="color-triangle" width="auto" height="auto"
-           viewBox="0 0 100 100">
+      <svg id="color-triangle" width="auto" height="auto" viewBox="0 0 100 100">
         <polygon points="0,75 25,25 50,75"></polygon>
       </svg>
       <!-- Star -->
       <svg id="color-star">
         <polygon id="color-star" points="50,0 40,40 0,40 30,65 20,100 50,80 80,100 70,65 100,40 60,40"></polygon>
       </svg>
-  </div>
-</body>
+      <!-- Ellipse and triangle -->
+      <svg  viewBox="0 0 100 100" version="1.1">
+        <rect class="figure-rect" x="0" y="25" width="100" height="50"
+              fill="#FFFF00" />
+        <ellipse class="figure-ellipse" cx="50" cy="50" rx="50" ry="25"
+                 fill="red" />
+      </svg>
+      <!-- lineas w -->
+        <svg>
+          <path d="M 0 10 L 50 200, 15 200, 100 10, 150 140, 200 10 "
+                stroke="black" fill="none" stroke-width="5">
+        </svg>
+
+        <!-- line and path-->
+        <svg>
+          <path d="M 0 50 L 100 50" stroke="black" stroke-width="12"/>
+          <line x1="50" y1="100" x2="50" y2="0" stroke-width="12" stroke="black" />
+        </svg>
+        <!-- curved line-->
+        <svg  viewBox="0 0 100 100"  height="100" width="100">
+          <!-- <path d="M 120 50 C 190 -20 340 100 120 160 C -140 50 110 -20 120 50" stroke="black" fill="#f463d0" stroke-width="5"></path> -->
+          <path  d="M 5 100 q 37.5 -150 80 0" stroke="blue" stroke-width="5" fill="none" height="100" width="100"></path>
+        </svg>
+        <!-- heart -->
+        <svg  viewBox="0 0 100 100" height="250" width="200">
+          <path d="M 55 40 C 100 -10, 125 70, 55 100 C -10 70, 0 -10, 56 41" stroke="red" stroke-width="3" fill="none"/>
+        </svg>
+    </div>
+  </body>
 </html>

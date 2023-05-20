@@ -16,8 +16,8 @@ html {
 
 .first-container {
     display: grid;
-    grid-template-columns: repeat(3, auto);
-    grid-template-rows: repeat(3, auto);
+    grid-template-columns: repeat(3, minmax(100px, 1fr));
+    grid-template-rows: repeat(3, minmax(100px, 1fr));
 }
 
 
@@ -50,4 +50,12 @@ html {
 
 #color-star {
     fill:#1de5db;
+}
+
+.figure-rect {
+    fill: #948170;
+}
+
+.figure-ellipse {
+    fill: #efe2d8;
 }
